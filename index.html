@@ -96,5 +96,119 @@
         </tr>
       </tbody>
     </table>
+    <br />
+
+    <form action="/" method="GET" style="width: 50%">
+      <fieldset>
+        <legend>My first form</legend>
+        <div>
+          <label for="name">Name</label>
+          <br />
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Name"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="email">Email</label>
+          <br />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="password">Password</label>
+          <br />
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Password"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="level">Your programming level</label>
+          <br />
+          <input type="range" name="level" id="level" min="1" max="10" />
+        </div>
+
+        <div>
+          <p>What does HTML stand for?</p>
+          <div>
+            <input type="checkbox" id="hyperlinks" name="hyperlinks" />
+            <label for="hyperlinks">Hyperlinks and Text Markup Language</label>
+          </div>
+          <div>
+            <input type="checkbox" id="home-tool" name="home-tool" />
+            <label for="home-tool">Home Tool Markup Language</label>
+          </div>
+          <div>
+            <input type="checkbox" id="hyper-text" name="hyper-text" />
+            <label for="hyper-text">Hyper Text Markup Language</label>
+          </div>
+        </div>
+
+        <div>
+          <p>What does HTTP stand for?</p>
+          <div>
+            <input type="radio" id="translate" name="http" value="translate" />
+            <label for="translate">Hyper Text Translate Protocol</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              id="transmission"
+              name="http"
+              value="transmission"
+            />
+            <label for="transmission">Hyper Text Transmission Protocol</label>
+          </div>
+          <div>
+            <input type="radio" id="transfer" name="http" value="transfer" />
+            <label for="transfer">Hyper Text Transfer Protocol</label>
+          </div>
+        </div>
+        <br />
+
+        <div>
+          <label for="comment">Comment</label>
+          <br />
+          <textarea
+            id="comment"
+            name="comment"
+            maxlength="500"
+            placeholder="Comment"
+          ></textarea>
+        </div>
+
+        <div>
+          <label for="answer-select">What does HTML stand for?</label>
+          <br />
+          <select name="answers" id="answer-select">
+            <option value="">Your answer</option>
+            <option value="correct">Hyper Text Markup Language</option>
+            <option value="home-tool">Home Tool Markup Language</option>
+            <option value="hyperlinks">
+              Hyperlinks and Text Markup Language
+            </option>
+          </select>
+        </div>
+        <br />
+        <div>
+          <input type="submit" value="Send" />
+        </div>
+      </fieldset>
+    </form>
   </body>
 </html>
