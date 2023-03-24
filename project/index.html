@@ -19,6 +19,89 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
+    <div class="top-section">
+      <div class="container">
+        <div class="header">
+          <a href="#">
+            <div class="header__logo header__sprite header__sprite--logo"></div>
+          </a>
+          <div class="header__nav">
+            <ul class="header__nav-list">
+              <li class="header__nav-item">
+                <a href="#" class="header__nav-link header__nav-link--active"
+                  >Stays</a
+                >
+              </li>
+              <li class="header__nav-item">
+                <a href="#" class="header__nav-link">Attractions</a>
+              </li>
+            </ul>
+            <ul class="header__nav-btns">
+              <li>
+                <button class="header__nav-btn">
+                  <span class="header__sprite header__sprite--theme"></span>
+                </button>
+              </li>
+              <li>
+                <button class="header__nav-btn">
+                  <span class="header__sprite header__sprite--user"></span>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <h1 class="top-section__title">
+          Discover stays <br />
+          to live, work or just relax
+        </h1>
+
+        <form class="top-section__form form">
+          <div class="form__field">
+            <label class="form__label" for="city"
+              >Your destination or hotel name</label
+            >
+            <input
+              class="form__input"
+              type="text"
+              id="city"
+              name="city"
+              placeholder="New York"
+            />
+          </div>
+          <div class="form__field">
+            <label class="form__label" for="date">Check-in — Check-out</label>
+            <input
+              class="form__input form__input--date"
+              type="text"
+              id="date"
+              name="date"
+              placeholder="Tue 15 Sept - Sat 19 Sept"
+              onfocus="(this.type='date')"
+            />
+          </div>
+          <div class="form__field">
+            <label class="form__label" for="guests"></label>
+            <input
+              class="form__input form__input--guests"
+              type="text"
+              id="guests"
+              name="guests"
+              placeholder="2 Adults — 0 Children — 1 Room"
+            />
+          </div>
+          <button class="form__submit-btn" type="submit">Search</button>
+        </form>
+
+        <div class="top-section__download-app">
+          <button>
+            <span class="header__sprite header__sprite--google-play"></span>
+          </button>
+          <button>
+            <span class="header__sprite header__sprite--apple-store"></span>
+          </button>
+        </div>
+      </div>
+    </div>
     <div class="container section offer is-centered">
       <h2 class="section__title offer__title">What do we offer</h2>
       <hr class="offer__line" />

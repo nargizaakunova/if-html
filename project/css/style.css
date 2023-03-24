@@ -53,6 +53,195 @@ body {
   font-weight: 400;
 }
 
+/*Top Section*/
+
+.top-section {
+  width: 100vw;
+  padding: 50px 0 120px;
+  background-image: url("./../images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/*Header*/
+
+.header__sprite {
+  display: block;
+  height: 40px;
+  background-image: url("./../images/content-images/sprite.svg");
+  background-repeat: no-repeat;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 196px;
+}
+
+.header__sprite--logo {
+  background-position: 0 0;
+  width: 205px;
+}
+
+.header__sprite--theme {
+  background-position: -205px 0;
+  width: 30px;
+}
+
+.header__sprite--user {
+  background-position: -235px 0;
+  width: 40px;
+}
+
+.header__sprite--google-play {
+  background-position: -275px 0;
+  width: 135px;
+}
+
+.header__sprite--apple-store {
+  background-position: -410px 0;
+  width: 120px;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+.header__nav-list {
+  display: flex;
+  gap: 24px;
+}
+
+.header__nav-item {
+}
+
+.header__nav-link {
+  position: relative;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #fff;
+}
+
+.header__nav-link--active::after {
+  content: "";
+  position: absolute;
+  /*Dynamic width, here it is 50px*/
+  width: 86%;
+  height: 4px;
+  bottom: -12px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background: #f5bd41;
+}
+
+.header__nav-btns {
+  display: flex;
+  gap: 24px;
+}
+
+.header__nav-btn {
+  border-style: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.top-section__title {
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 59px;
+  color: #fff;
+  margin-bottom: 100px;
+  margin-top: 0;
+}
+
+.top-section__form {
+  margin-bottom: 120px;
+}
+
+.form {
+  display: flex;
+  align-items: flex-end;
+}
+
+.form__field {
+  flex-basis: 30%;
+}
+
+.form__field:focus-within {
+  z-index: 100;
+}
+
+.form__label {
+  display: inline-block;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+  line-height: 21px;
+  margin-bottom: 24px;
+  padding-left: 30px;
+}
+
+.form__input {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #383838;
+  gap: 24px;
+  width: 100%;
+  padding: 22px 24px;
+  border-radius: 8px;
+  border: 3px solid #f3f3f4;
+  max-height: 64px;
+}
+
+.form__input:focus {
+  outline: none;
+  border: 3px solid #f5bd41;
+  box-shadow: 0 0 10px #719ece;
+  z-index: 100;
+}
+
+.form__input--date {
+  margin-left: -6px;
+}
+
+.form__input--guests {
+  margin-left: -12px;
+  z-index: 0;
+}
+
+.form__submit-btn {
+  max-height: 64px;
+  padding: 20px 57px;
+  border-style: none;
+  border-radius: 8px;
+  background-color: #3077c6;
+  color: #fff;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
+  margin-left: -18px;
+}
+
+.top-section__download-app {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.top-section__download-app button {
+  border-style: none;
+  cursor: pointer;
+  border-radius: 11px;
+}
+
 /*What do we offer*/
 
 .offer__title {
