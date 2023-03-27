@@ -62,7 +62,7 @@ body {
   background-image: url("./../images/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: top;
 }
 
 /*Header*/
@@ -78,7 +78,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 196px;
+  margin-bottom: 202px;
 }
 
 .header__sprite--logo {
@@ -134,7 +134,7 @@ body {
   /*Dynamic width, here it is 50px*/
   width: 86%;
   height: 4px;
-  bottom: -12px;
+  bottom: -14px;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -156,6 +156,7 @@ body {
   font-size: 50px;
   font-weight: 500;
   line-height: 59px;
+  letter-spacing: 0.3px;
   color: #fff;
   margin-bottom: 100px;
   margin-top: 0;
@@ -171,11 +172,19 @@ body {
 }
 
 .form__field {
-  flex-basis: 30%;
+  flex-basis: 27%;
 }
 
 .form__field:focus-within {
   z-index: 100;
+}
+
+.form__filed--city {
+  flex-grow: 1;
+}
+
+.form__filed--date {
+  flex-basis: 259px;
 }
 
 .form__label {
@@ -186,7 +195,7 @@ body {
   color: #fff;
   line-height: 21px;
   margin-bottom: 24px;
-  padding-left: 30px;
+  padding-left: 25px;
 }
 
 .form__input {
@@ -211,10 +220,12 @@ body {
 
 .form__input--date {
   margin-left: -6px;
+  padding-left: 18px;
 }
 
 .form__input--guests {
   margin-left: -12px;
+  padding-left: 35px;
   z-index: 0;
 }
 
