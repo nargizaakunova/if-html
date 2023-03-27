@@ -162,6 +162,10 @@ body {
   margin-top: 0;
 }
 
+.top-section__title-break {
+  display: inherit;
+}
+
 .top-section__form {
   margin-bottom: 120px;
 }
