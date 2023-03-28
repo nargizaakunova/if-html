@@ -67,13 +67,6 @@ body {
 
 /*Header*/
 
-.header__sprite {
-  display: block;
-  height: 40px;
-  background-image: url("./../images/content-images/sprite.svg");
-  background-repeat: no-repeat;
-}
-
 .header {
   display: flex;
   justify-content: space-between;
@@ -81,29 +74,21 @@ body {
   margin-bottom: 202px;
 }
 
-.header__sprite--logo {
-  background-position: 0 0;
+/*.header__sprite--logo {*/
+/*  background-position: 0 0;*/
+/*  width: 205px;*/
+/*}*/
+
+.header__logo {
   width: 205px;
 }
 
-.header__sprite--theme {
-  background-position: -205px 0;
+.header__nav-btn--theme {
   width: 30px;
 }
 
-.header__sprite--user {
-  background-position: -235px 0;
+.header__nav-btn--user {
   width: 40px;
-}
-
-.header__sprite--google-play {
-  background-position: -275px 0;
-  width: 135px;
-}
-
-.header__sprite--apple-store {
-  background-position: -410px 0;
-  width: 120px;
 }
 
 .header__nav {
@@ -183,11 +168,11 @@ body {
   z-index: 100;
 }
 
-.form__filed--city {
+.form__field--city {
   flex-grow: 1;
 }
 
-.form__filed--date {
+.form__field--date {
   flex-basis: 259px;
 }
 
@@ -253,10 +238,27 @@ body {
   gap: 16px;
 }
 
-.top-section__download-app button {
+.top-section__btn {
   border-style: none;
   cursor: pointer;
   border-radius: 11px;
+  background-color: transparent;
+}
+
+.hidden {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+
+.top-section__btn--google-play {
+  width: 135px;
+  height: 40px;
+}
+
+.top-section__btn--apple-store {
+  width: 120px;
 }
 
 /*What do we offer*/
