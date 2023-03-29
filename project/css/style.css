@@ -66,19 +66,12 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 202px;
+  margin-bottom: 200px;
 }
 
 .header__logo {
   width: 205px;
-}
-
-.header__nav-btn--theme {
-  width: 30px;
-}
-
-.header__nav-btn--user {
-  width: 40px;
+  height: 40px;
 }
 
 .header__nav {
@@ -119,12 +112,23 @@ body {
 .header__nav-btns {
   display: flex;
   gap: 24px;
+  align-items: center;
 }
 
 .header__nav-btn {
   border-style: none;
   background-color: transparent;
   cursor: pointer;
+}
+
+.header__nav-btn--theme {
+  width: 30px;
+  height: 30px;
+}
+
+.header__nav-btn--user {
+  width: 40px;
+  height: 40px;
 }
 
 .top-section__title {
@@ -249,6 +253,7 @@ body {
 
 .top-section__btn--apple-store {
   width: 120px;
+  height: 40px;
 }
 
 /*What do we offer*/
