@@ -49,11 +49,6 @@ body {
   width: 25%;
 }
 
-.card-title {
-  font-size: 24px;
-  font-weight: 400;
-}
-
 /*Top Section*/
 
 .top-section {
@@ -73,11 +68,6 @@ body {
   align-items: center;
   margin-bottom: 202px;
 }
-
-/*.header__sprite--logo {*/
-/*  background-position: 0 0;*/
-/*  width: 205px;*/
-/*}*/
 
 .header__logo {
   width: 205px;
@@ -276,11 +266,32 @@ body {
 }
 
 .offer__card {
-  text-align: center;
 }
 
-.offer__img {
+.offer__card-img {
   margin-bottom: 48px;
+  height: 100px;
+}
+
+.offer__card-img--headset {
+  width: 75px;
+}
+
+.offer__card-img--forum {
+  width: 83px;
+}
+
+.offer__card-img--devices {
+  width: 100px;
+}
+
+.offer__card-img--thumbs-up {
+  width: 92px;
+}
+
+.offer__card-title {
+  font-size: 24px;
+  font-weight: 400;
 }
 
 /*Footer*/
