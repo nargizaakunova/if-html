@@ -147,6 +147,9 @@ body {
 
 .top-section__form {
   margin-bottom: 120px;
+  background-color: #fff;
+  border-radius: 8px;
+  max-height: 64px;
 }
 
 .form {
