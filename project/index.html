@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta
       name="description"
-      content="This is a webpage about TripHouse, tourism and fun!"
+      content="This is a webpage about TripHouse, tourism, and fun!"
     />
     <meta name="keywords" content="tourism, booking, vacation, resort" />
     <meta name="author" content="Nargiza Akunova" />
@@ -20,10 +20,10 @@
   </head>
   <body>
     <div class="top-section">
-      <div class="container">
+      <div class="container top-section-wrap">
         <div class="header">
-          <a href="#">
-            <svg class="header__logo">
+          <a class="header__logo-link" href="#">
+            <svg class="header__logo-img">
               <use href="./images/content-images/sprite.svg#logo" />
             </svg>
           </a>
@@ -60,7 +60,6 @@
           <span class="top-section__title-break">Discover stays</span>
           <span>to live, work or just relax</span>
         </h1>
-
         <form class="top-section__form form">
           <div class="form__field form__field--city">
             <label class="form__label" for="city"
@@ -84,7 +83,6 @@
               id="date"
               name="date"
               placeholder="Tue 15 Sept &mdash; Sat 19 Sept"
-              onfocus="(this.type='date')"
             />
           </div>
           <div class="form__field form__field--guests">
@@ -102,7 +100,7 @@
 
         <div class="top-section__download-app">
           <!--            Download buttons' initialization:-->
-          <svg class="hidden" xmlns="http://www.w3.org/2000/svg">
+          <svg class="_is-hidden" xmlns="http://www.w3.org/2000/svg">
             <symbol id="google-play" viewBox="0 0 135 40">
               <path
                 fill="#000"
@@ -239,11 +237,11 @@
         </div>
       </div>
     </div>
-    <div class="container section offer is-centered">
+    <div class="container section offer _is-centered">
       <h2 class="section__title offer__title">What do we offer</h2>
       <hr class="offer__line" />
-      <div class="section__cards offer__cards">
-        <div class="col-lg-3 col-md-6 col-sm-6 offer__card is-centered">
+      <div class="offer__cards">
+        <div class="col-lg-3 col-md-6 col-sm-6 offer__card">
           <svg class="offer__card-img">
             <use href="./images/content-images/sprite.svg#headset" />
           </svg>
@@ -270,10 +268,15 @@
       </div>
     </div>
     <div class="footer">
-      <div class="container section">
+      <div class="container footer__wrap">
+        <a class="footer__logo-link" href="#">
+          <svg class="footer__logo-img">
+            <use href="./images/content-images/sprite.svg#footer-logo" />
+          </svg>
+        </a>
         <div class="footer__row">
-          <div class="footer__col footer__col--1">
-            <ul>
+          <div class="col-lg-4 col-md-6 col-sm-2 footer__col">
+            <ul class="footer__list _right">
               <li class="footer__link footer__link--bold">
                 <a href="#">About</a>
               </li>
@@ -283,8 +286,8 @@
               <li class="footer__link"><a href="#">Terms</a></li>
             </ul>
           </div>
-          <div class="footer__col footer__col--2">
-            <ul>
+          <div class="col-lg-4 col-md-6 col-sm-2 footer__col">
+            <ul class="footer__list _center">
               <li class="footer__link footer__link--bold">
                 <a href="#">Property types</a>
               </li>
@@ -296,8 +299,8 @@
               <li class="footer__link"><a href="#">Hostels</a></li>
             </ul>
           </div>
-          <div class="footer__col footer__col--3">
-            <ul>
+          <div class="col-lg-4 col-md-6 col-sm-2 footer__col">
+            <ul class="footer__list _left">
               <li class="footer__link footer__link--bold">
                 <a href="#">Support</a>
               </li>
@@ -309,7 +312,7 @@
           </div>
         </div>
         <p class="footer__copyright">
-          &copy; 2022Triphouse, Inc. All rights reserved
+          &copy; 2022 Triphouse, Inc. All rights reserved
         </p>
       </div>
     </div>
