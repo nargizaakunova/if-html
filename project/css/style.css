@@ -7,6 +7,7 @@
   --unit: 16px;
   --container-width: 1232px;
   --container-pad-top-btm: 120px;
+  --container-pad-left-right: 104px;
   --title-mg-bottom: 104px;
   --text-color: #383838;
   --color-dark-mode-1: #121212;
@@ -37,9 +38,9 @@ body {
 }
 
 .container {
-  max-width: calc(var(--container-width) + var(--unit) * 2);
+  max-width: var(--container-width);
   margin: 0 auto;
-  padding: var(--container-pad-top-btm) var(--unit);
+  padding: var(--container-pad-top-btm) var(--container-pad-left-right);
 }
 
 ._is-centered {
@@ -402,7 +403,8 @@ body {
 @media (max-width: 1024px) {
   /* For tablets: */
   :root {
-    --container-width: 768px;
+    --container-width: 100%;
+    --container-pad-left-right: 52px;
     --container-pad-top-btm: 80px;
     --title-mg-bottom: 32px;
   }
@@ -480,11 +482,6 @@ body {
 
   /*Footer*/
 
-  .footer__wrap {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
   .footer__col {
     margin-bottom: var(--unit);
   }
@@ -503,7 +500,8 @@ body {
   /* For mobile devices: */
 
   :root {
-    --container-width: 100%;
+    --container-pad-top-btm: 40px;
+    --container-pad-left-right: 16px;
     --col-width: calc(100% / 6);
   }
 
@@ -538,8 +536,11 @@ body {
   /*What do we offer*/
 
   .offer {
-    padding-bottom: 40px;
     padding-top: 24px;
+  }
+
+  .offer__title {
+    margin-bottom: 32px;
   }
 
   .offer__line {
@@ -561,10 +562,6 @@ body {
 
   /*Footer*/
 
-  .footer__wrap {
-    padding: 40px 0;
-  }
-
   .footer__logo-img {
     display: block;
     margin: 0 auto 40px;
@@ -573,7 +570,7 @@ body {
   }
 
   .footer__row {
-    margin-bottom: 28px;
+    margin-bottom: 32px;
   }
 
   .footer__col {
