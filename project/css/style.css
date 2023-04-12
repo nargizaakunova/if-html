@@ -249,6 +249,9 @@ body {
   color: var(--color-general-white);
   line-height: 21px;
   margin-bottom: 24px;
+}
+
+.form__label._pad-left {
   padding-left: 25px;
 }
 
@@ -295,6 +298,14 @@ body {
   font-weight: 500;
   margin-left: -18px;
   cursor: pointer;
+}
+
+.top-section__mobile-form {
+  display: none;
+}
+.form__submit-btn--mobile {
+  margin-left: 0;
+  width: 100%;
 }
 
 .top-section__download-app {
@@ -501,6 +512,15 @@ body {
 }
 
 @media (max-width: 768px) {
+  .header {
+    margin-bottom: 50px;
+  }
+
+  .header__logo-img {
+    width: 122px;
+    height: 24px;
+  }
+
   .header__nav-list {
     display: none;
   }
@@ -528,6 +548,152 @@ body {
   .header__hamburger-img {
     width: 24px;
     height: 16px;
+  }
+
+  .top-section__title {
+    font-size: 30px;
+    line-height: 35px;
+    margin-bottom: 30px;
+  }
+
+  .top-section__mobile-form {
+    display: grid;
+    gap: 8px;
+    margin-bottom: 32px;
+    padding: 8px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+    background-color: var(--color-accent-yellow);
+  }
+
+  .top-section__form {
+    display: none;
+  }
+
+  .form__label {
+    margin-bottom: 0;
+    z-index: 100;
+  }
+
+  .form__input {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+    gap: 24px;
+    padding: 22px 8px 8px;
+    border: none;
+    max-height: 48px;
+  }
+
+  .form__input:focus {
+    border: none;
+    box-shadow: none;
+    z-index: 0;
+
+  }
+
+  .form__label--destination {
+    grid-column: 1 / -1;
+    grid-row: 1;
+    position: relative;
+  }
+
+  .form__label--destination::before {
+    content: "";
+    position: absolute;
+    background : url(../images/content-images/magnifyer.svg) no-repeat;
+    width: 16px;
+    height: 16px;
+    color: black;
+    top: 50%;
+    transform: translate(75%, -50%);
+  }
+
+  .form__label--check-in, .form__label--check-out, .form__label--adults, .form__label--children, .form__label--rooms {
+    position: relative;
+  }
+
+  .form__label--check-in::before, .form__label--check-out::before, .form__label--adults::before, .form__label--children::before, .form__label--rooms::before {
+    content: attr(content);
+    position: absolute;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    color: var(--text-color);
+    padding-left: 8px;
+    padding-top: 4px;
+    z-index: inherit;
+  }
+
+  .form__label--check-in {
+    grid-column: 1 / 4;
+    grid-row: 2;
+  }
+
+  .form__label--check-out {
+    grid-column: 4 / -1;
+    grid-row: 2;
+  }
+
+  .form__label--adults, .form__label--children {
+    position: relative;
+  }
+
+  .form__label--adults::after {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 32px;
+    background-color: var(--color-secondary-text);
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .form__label--children::after {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 32px;
+    background-color: var(--color-secondary-text);
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .grid__row-3 {
+    grid-column: 1 / -1;
+    grid-row: 3;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .form__input--destination {
+    padding-bottom: 22px;
+    padding-left: 38px;
+  }
+
+  .form__input--adults {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+
+  .form__input--children {
+    border-radius: 0;
+    position: relative;
+  }
+
+
+  .form__input--rooms {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .form__submit-btn--mobile {
+    grid-column: 1 / -1;
+    grid-row: 4;
+    font-size: 19px;
+    height: 48px;
+    padding: initial;
   }
 }
 
@@ -566,6 +732,12 @@ body {
 
   .section__title {
     font-size: 28px;
+  }
+
+  /*Top Section*/
+
+  .top-section-wrap {
+    padding-top: 12px;
   }
 
   /*What do we offer*/
