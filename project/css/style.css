@@ -88,6 +88,25 @@ body {
   color: var(--color-secondary-text);
 }
 
+.card__arrow-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 31%;
+  right: -12px;
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-stroke);
+  border-radius: 50%;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.card__arrow-img {
+  max-width: 9px;
+  max-height: 21px;
+}
+
 /* For desktop: */
 .col-lg-1 {
   width: var(--col-width);
@@ -376,6 +395,10 @@ body {
 /*Homes guests loves*/
 .homes {
   background-color: var(--color-bg-main);
+}
+
+.homes__cards {
+  position: relative;
 }
 
 .homes__card-img {
@@ -775,6 +798,18 @@ body {
     font-size: 12px;
     line-height: 14px;
     margin-bottom: 4px;
+  }
+
+  .card__arrow-btn {
+    top: 30%;
+    right: -4px;
+    width: 28px;
+    height: 28px;
+  }
+
+  .card__arrow-img {
+    width: 7px;
+    height: 15px;
   }
 
   /*Homes guests love*/
