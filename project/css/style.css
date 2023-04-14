@@ -6,9 +6,11 @@
   --col-width: calc(100% / 12);
   --unit: 16px;
   --container-width: 1232px;
+  --section-title-size: 40px;
   --container-pad-top-btm: 120px;
   --container-pad-left-right: 104px;
   --title-mg-bottom: 104px;
+  --image-mg-bottom: 24px;
   --text-color: #383838;
   --color-dark-mode-1: #121212;
   --color-dark-mode-2: #1d1e1f;
@@ -53,6 +55,37 @@ body {
   width: 0;
   height: 0;
   position: absolute;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: calc(var(--unit) / -2);
+  margin-left: calc(var(--unit) / -2);
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+}
+
+.card__img {
+  max-width: 296px;
+  width: 100%;
+  aspect-ratio: 1 /1;
+}
+
+.card__title {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px;
+  color: var(--color-accent-blue);
+}
+
+.card__location-info {
+  font-size: 24px;
+  line-height: 28px;
+  color: var(--color-secondary-text);
 }
 
 /* For desktop: */
@@ -110,8 +143,9 @@ body {
 }
 
 .section__title {
+  text-align: center;
   font-weight: 500;
-  font-size: 40px;
+  font-size: var(--section-title-size);
   margin-bottom: var(--title-mg-bottom);
 }
 
@@ -327,13 +361,6 @@ body {
   transform: translateX(-50%);
 }
 
-.offer__cards {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: calc(var(--unit) / -2);
-  margin-left: calc(var(--unit) / -2);
-}
-
 .offer__card-img {
   margin-bottom: 48px;
   width: 100%;
@@ -344,6 +371,19 @@ body {
 .offer__card-title {
   font-size: 24px;
   font-weight: 400;
+}
+
+/*Homes guests loves*/
+.homes {
+  background-color: var(--color-bg-main);
+}
+
+.homes__card-img {
+  margin-bottom: var(--image-mg-bottom);
+}
+
+.homes__card-title {
+  margin-bottom: 24px;
 }
 
 /*Footer*/
@@ -404,6 +444,7 @@ body {
     --container-pad-left-right: 52px;
     --container-pad-top-btm: 80px;
     --title-mg-bottom: 72px;
+    --section-title-size: 34px;
   }
 
   .col-md-1 {
@@ -455,7 +496,7 @@ body {
   }
 
   .section__title {
-    font-size: 34px;
+    font-size: var(--section-title-size);
   }
 
   /*Top Section*/
@@ -465,10 +506,6 @@ body {
   }
 
   /*What do we offer*/
-
-  .offer__line {
-    margin-bottom: 60px;
-  }
 
   .offer__card {
     margin-bottom: calc(var(--unit) * 3);
@@ -481,6 +518,13 @@ body {
 
   .offer__card-title {
     font-size: 18px;
+  }
+
+  /*Homes guests love*/
+
+  .homes__card:nth-child(3),
+  .homes__card:nth-child(4) {
+    display: none;
   }
 
   /*Footer*/
@@ -500,6 +544,16 @@ body {
 }
 
 @media (max-width: 768px) {
+  :root {
+    --image-mg-bottom: 16px;
+  }
+
+  .card__title {
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 14px;
+  }
+
   .header {
     margin-bottom: 50px;
   }
@@ -669,16 +723,24 @@ body {
     font-size: 19px;
     height: 48px;
   }
+
+  /*Homes guests love*/
+  .card__location-info {
+    font-size: 20px;
+    line-height: 1.2;
+  }
 }
 
 @media (max-width: 480px) {
   /* For mobile devices: */
 
   :root {
+    --section-title-size: 28px;
     --container-pad-top-btm: 40px;
     --container-pad-left-right: 16px;
     --col-width: calc(100% / 6);
     --title-mg-bottom: 32px;
+    --image-mg-bottom: 8px;
   }
 
   .col-sm-1 {
@@ -706,7 +768,19 @@ body {
   }
 
   .section__title {
-    font-size: 28px;
+    font-size: var(--section-title-size);
+  }
+
+  .card__title {
+    font-size: 12px;
+    line-height: 14px;
+    margin-bottom: 4px;
+  }
+
+  /*Homes guests love*/
+  .card__location-info {
+    font-size: 12px;
+    line-height: 14px;
   }
 
   /*Top Section*/
@@ -725,7 +799,7 @@ body {
     margin-bottom: 32px;
   }
 
-  .offer__title::after  {
+  .offer__title::after {
     display: none;
   }
 
