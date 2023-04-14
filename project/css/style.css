@@ -315,15 +315,18 @@ body {
 /*What do we offer*/
 
 .offer__title {
-  margin-bottom: 22px;
+  position: relative;
 }
 
-.offer__line {
+.offer__title::after {
+  content: "";
+  position: absolute;
   width: 100px;
   height: 4px;
   background-color: var(--color-accent-yellow);
-  border-style: none;
-  margin: 0 auto 80px;
+  left: 50%;
+  bottom: -28px;
+  transform: translateX(-50%);
 }
 
 .offer__cards {
