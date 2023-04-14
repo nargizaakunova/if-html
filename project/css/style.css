@@ -41,6 +41,7 @@ body {
   max-width: var(--container-width);
   margin: 0 auto;
   padding: var(--container-pad-top-btm) var(--container-pad-left-right);
+  box-sizing: content-box;
 }
 
 ._is-centered {
@@ -195,7 +196,7 @@ body {
   height: 40px;
 }
 
-.header__hamburger {
+.header__hamburger-wrapper {
   display: none;
 }
 
@@ -222,7 +223,6 @@ body {
 
 .form {
   display: flex;
-  align-items: flex-end;
 }
 
 .form__field {
@@ -539,8 +539,11 @@ body {
     height: 24px;
   }
 
-  .header__hamburger {
+  .header__hamburger-wrapper {
     display: block;
+  }
+
+  .header__hamburger-btn {
     background-color: transparent;
     border: none;
   }
@@ -589,7 +592,6 @@ body {
     border: none;
     box-shadow: none;
     z-index: 0;
-
   }
 
   .form__label--destination {
