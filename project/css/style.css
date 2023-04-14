@@ -403,7 +403,7 @@ body {
     --container-width: 100%;
     --container-pad-left-right: 52px;
     --container-pad-top-btm: 80px;
-    --title-mg-bottom: 32px;
+    --title-mg-bottom: 72px;
   }
 
   .col-md-1 {
@@ -678,6 +678,7 @@ body {
     --container-pad-top-btm: 40px;
     --container-pad-left-right: 16px;
     --col-width: calc(100% / 6);
+    --title-mg-bottom: 32px;
   }
 
   .col-sm-1 {
@@ -724,7 +725,7 @@ body {
     margin-bottom: 32px;
   }
 
-  .offer__line {
+  .offer__title::after  {
     display: none;
   }
 
