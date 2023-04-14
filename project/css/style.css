@@ -161,16 +161,14 @@ body {
   color: var(--color-general-white);
 }
 
-.header__nav-link--active::after {
+.header__nav-link:hover::after {
   content: "";
   position: absolute;
-  /*Dynamic width, here it is 50px*/
-  width: 86%;
+  width: 50px;
   height: 4px;
   bottom: -14px;
   left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
+  transform: translateX(-50%);
   background: var(--color-accent-yellow);
 }
 
