@@ -82,12 +82,6 @@ body {
   color: var(--color-accent-blue);
 }
 
-.card__location-info {
-  font-size: 24px;
-  line-height: 28px;
-  color: var(--color-secondary-text);
-}
-
 .card__arrow-btn {
   display: flex;
   justify-content: center;
@@ -407,6 +401,12 @@ body {
 
 .homes__card-title {
   margin-bottom: 24px;
+}
+
+.card__location-info {
+  font-size: 24px;
+  line-height: 28px;
+  color: var(--color-secondary-text);
 }
 
 /*Footer*/
@@ -812,12 +812,6 @@ body {
     height: 15px;
   }
 
-  /*Homes guests love*/
-  .card__location-info {
-    font-size: 12px;
-    line-height: 14px;
-  }
-
   /*Top Section*/
 
   .top-section-wrap {
@@ -849,6 +843,12 @@ body {
 
   .offer__card-title {
     font-size: 15px;
+  }
+
+  /*Homes guests love*/
+  .card__location-info {
+    font-size: 12px;
+    line-height: 14px;
   }
 
   /*Footer*/
