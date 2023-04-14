@@ -109,8 +109,8 @@
           <button class="form__submit-btn" type="submit">Search</button>
         </form>
         <!--        Mobile Form/Tablet-->
-        <form class="top-section__mobile-form">
-          <label class="form__label form__label--destination">
+        <form class="top-section__form-m form form-m">
+          <label class="form-m__label form-m__label--destination">
             <input
               class="form__input form__input--destination"
               type="text"
@@ -118,18 +118,24 @@
               name="destination-m"
               placeholder="Your destination or hotel name"
           /></label>
-          <label class="form__label form__label--check-in" content="Check-in">
+          <label
+            class="form-m__label form-m__label--check-in"
+            content="Check-in"
+          >
             <input
-              class="form__input"
+              class="form__input form__input--check-in"
               type="text"
               id="check-in"
               name="check-in"
               placeholder="Tue 15 Sept 2020"
             />
           </label>
-          <label class="form__label form__label--check-out" content="Check-out">
+          <label
+            class="form-m__label form-m__label--check-out"
+            content="Check-out"
+          >
             <input
-              class="form__input"
+              class="form__input form__input--check-out"
               type="text"
               id="check-out"
               name="check-out"
@@ -137,36 +143,44 @@
             />
           </label>
 
-<div class="grid__row-3">
-          <label class="form__label form__label--adults" content="Adults">
-            <input
-              class="form__input form__input--adults"
-              type="text"
-              id="adults"
-              name="adults"
-              placeholder="2"
-            />
-          </label>
-          <label class="form__label form__label--children" content="Children">
-            <input
-              class="form__input form__input--children"
-              type="text"
-              id="children"
-              name="children"
-              placeholder="0"
-            />
-          </label>
-          <label class="form__label form__label--rooms" content="Rooms">
-            <input
-              class="form__input form__input--rooms"
-              type="text"
-              id="rooms"
-              name="rooms"
-              placeholder="1"
-            />
-          </label>
-</div>
-          <button class="form__submit-btn form__submit-btn--mobile" type="submit">Search</button>
+          <div class="grid__row-3">
+            <label class="form-m__label form-m__label--adults" content="Adults">
+              <input
+                class="form__input form__input--adults"
+                type="text"
+                id="adults"
+                name="adults"
+                placeholder="2"
+              />
+            </label>
+            <label
+              class="form-m__label form-m__label--children"
+              content="Children"
+            >
+              <input
+                class="form__input form__input--children"
+                type="text"
+                id="children"
+                name="children"
+                placeholder="0"
+              />
+            </label>
+            <label class="form-m__label form-m__label--rooms" content="Rooms">
+              <input
+                class="form__input form__input--rooms"
+                type="text"
+                id="rooms"
+                name="rooms"
+                placeholder="1"
+              />
+            </label>
+          </div>
+          <button
+            class="form__submit-btn form__submit-btn--mobile"
+            type="submit"
+          >
+            Search
+          </button>
         </form>
 
         <div class="top-section__download-app">
