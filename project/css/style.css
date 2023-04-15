@@ -11,15 +11,15 @@
   --title-mg-bottom: 104px;
   --text-color: #383838;
   --color-dark-mode-1: #121212;
-  --color-dark-mode-2: #1D1E1F;
-  --color-dark-mode-3: #4D4D4D;
-  --color-stroke: #F3F3F4;
-  --color-secondary-text: #BFBFBF;
+  --color-dark-mode-2: #1d1e1f;
+  --color-dark-mode-3: #4d4d4d;
+  --color-stroke: #f3f3f4;
+  --color-secondary-text: #bfbfbf;
   --color-general-white: #fff;
   --color-accent-yellow: #f5bd41;
-  --color-general-blue :#10367c;
-  --color-accent-blue: #3077C6;
-  --color-bg-main: #EAF0F9;
+  --color-general-blue: #10367c;
+  --color-accent-blue: #3077c6;
+  --color-bg-main: #eaf0f9;
 }
 
 * {
@@ -41,6 +41,7 @@ body {
   max-width: var(--container-width);
   margin: 0 auto;
   padding: var(--container-pad-top-btm) var(--container-pad-left-right);
+  box-sizing: content-box;
 }
 
 ._is-centered {
@@ -195,6 +196,10 @@ body {
   height: 40px;
 }
 
+.header__hamburger-wrapper {
+  display: none;
+}
+
 .top-section__title {
   font-size: 50px;
   font-weight: 500;
@@ -210,23 +215,16 @@ body {
 }
 
 .top-section__form {
+  display: flex;
+  align-items: flex-end;
   margin-bottom: 120px;
   background-color: var(--color-general-white);
   border-radius: 8px;
   max-height: 64px;
 }
 
-.form {
-  display: flex;
-  align-items: flex-end;
-}
-
 .form__field {
-  flex-basis: 27%;
-}
-
-.form__field:focus-within {
-  z-index: 100;
+  flex-basis: 25.6%;
 }
 
 .form__field--city {
@@ -245,7 +243,10 @@ body {
   color: var(--color-general-white);
   line-height: 21px;
   margin-bottom: 24px;
-  padding-left: 25px;
+}
+
+.form__label._pad-left {
+  padding-left: 23px;
 }
 
 .form__input {
@@ -253,11 +254,10 @@ body {
   font-weight: 400;
   line-height: 21px;
   color: var(--text-color);
-  gap: 24px;
   width: 100%;
   padding: 22px 24px;
   border-radius: 8px;
-  border: 3px solid var(--color-stroke);
+  border: 3px solid transparent;
   max-height: 64px;
 }
 
@@ -265,23 +265,16 @@ body {
   outline: none;
   border: 3px solid var(--color-accent-yellow);
   box-shadow: 0 0 10px #719ece;
-  z-index: 100;
 }
 
 .form__input--date {
-  margin-left: -6px;
-  padding-left: 18px;
-}
-
-.form__input--guests {
-  margin-left: -12px;
-  padding-left: 35px;
-  z-index: 0;
+  padding-left: 20px;
+  border: 3px solid var(--color-stroke);
 }
 
 .form__submit-btn {
-  max-height: 64px;
-  padding: 20px 57px;
+  flex-basis: 192px;
+  height: 64px;
   border-style: none;
   border-radius: 8px;
   background-color: var(--color-accent-blue);
@@ -289,8 +282,11 @@ body {
   font-size: 24px;
   line-height: 28px;
   font-weight: 500;
-  margin-left: -18px;
   cursor: pointer;
+}
+
+.top-section__form-m {
+  display: none;
 }
 
 .top-section__download-app {
@@ -461,6 +457,12 @@ body {
     font-size: 34px;
   }
 
+  /*Top Section*/
+
+  .form__field {
+    flex-basis: calc((100% - 192px) / 3);
+  }
+
   /*What do we offer*/
 
   .offer__line {
@@ -493,6 +495,178 @@ body {
   .footer__link {
     font-size: 18px;
     margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    margin-bottom: 50px;
+  }
+
+  .header__logo-img {
+    width: 122px;
+    height: 24px;
+  }
+
+  .header__nav-list {
+    display: none;
+  }
+
+  .header__nav-btns {
+    gap: var(--unit);
+  }
+
+  .header__nav-btn--theme {
+    width: 16px;
+    height: 16px;
+  }
+
+  .header__nav-btn--user {
+    width: 24px;
+    height: 24px;
+  }
+
+  .header__hamburger-wrapper {
+    display: block;
+  }
+
+  .header__hamburger-btn {
+    background-color: transparent;
+    border: none;
+  }
+
+  .header__hamburger-img {
+    width: 24px;
+    height: 16px;
+  }
+
+  .top-section__title {
+    font-size: 30px;
+    line-height: 35px;
+    margin-bottom: 30px;
+  }
+
+  .top-section__form-m {
+    display: grid;
+    gap: 8px;
+    margin-bottom: 32px;
+    padding: 8px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+    background-color: var(--color-accent-yellow);
+  }
+
+  .top-section__form {
+    display: none;
+  }
+
+  .form__input {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+    padding: 24px 8px 6px;
+    border: none;
+    max-height: 48px;
+  }
+
+  .form__input:focus {
+    border: none;
+    box-shadow: none;
+  }
+
+  .form-m__label--destination {
+    grid-column: 1 / -1;
+    grid-row: 1;
+    position: relative;
+  }
+
+  .form-m__label--destination::before {
+    content: "";
+    position: absolute;
+    background: url(../images/content-images/magnifyer.svg) no-repeat;
+    width: 16px;
+    height: 16px;
+    color: black;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+  }
+
+  .form__input--destination {
+    padding: 15px 0 15px 38px;
+  }
+
+  .form-m__label--check-in,
+  .form-m__label--check-out,
+  .form-m__label--adults,
+  .form-m__label--children,
+  .form-m__label--rooms {
+    position: relative;
+  }
+
+  .form-m__label--check-in::before,
+  .form-m__label--check-out::before,
+  .form-m__label--adults::before,
+  .form-m__label--children::before,
+  .form-m__label--rooms::before {
+    content: attr(content);
+    position: absolute;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    color: var(--text-color);
+    left: 8px;
+    top: 6px;
+    z-index: 1;
+  }
+
+  .form-m__label--check-in {
+    grid-column: 1 / 4;
+    grid-row: 2;
+  }
+
+  .form-m__label--check-out {
+    grid-column: 4 / -1;
+    grid-row: 2;
+  }
+
+  .grid__row-3 {
+    grid-column: 1 / -1;
+    grid-row: 3;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .form-m__label--adults::after,
+  .form-m__label--children::after {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 32px;
+    background-color: var(--color-secondary-text);
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .form__input--adults {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .form__input--children {
+    border-radius: 0;
+  }
+
+  .form__input--rooms {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .form__submit-btn--mobile {
+    grid-column: 1 / -1;
+    grid-row: 4;
+    font-size: 19px;
+    height: 48px;
   }
 }
 
@@ -531,6 +705,12 @@ body {
 
   .section__title {
     font-size: 28px;
+  }
+
+  /*Top Section*/
+
+  .top-section-wrap {
+    padding-top: 12px;
   }
 
   /*What do we offer*/

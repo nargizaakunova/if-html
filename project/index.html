@@ -53,6 +53,13 @@
                   </svg>
                 </button>
               </li>
+              <li class="header__hamburger-wrapper">
+                <button class="header__hamburger-btn">
+                  <svg class="header__hamburger-img">
+                    <use href="./images/content-images/sprite.svg#hamburger" />
+                  </svg>
+                </button>
+              </li>
             </ul>
           </div>
         </div>
@@ -60,9 +67,10 @@
           <span class="top-section__title-break">Discover stays</span>
           <span>to live, work or just relax</span>
         </h1>
+        <!--        Desktop form-->
         <form class="top-section__form form">
           <div class="form__field form__field--city">
-            <label class="form__label" for="city"
+            <label class="form__label _pad-left" for="city"
               >Your destination or hotel name</label
             >
             <input
@@ -71,10 +79,11 @@
               id="city"
               name="city"
               placeholder="New York"
+              title="Select your destination or hotel name"
             />
           </div>
           <div class="form__field form__field--date">
-            <label class="form__label" for="date"
+            <label class="form__label _pad-left" for="date"
               >Check-in &mdash; Check-out</label
             >
             <input
@@ -83,19 +92,95 @@
               id="date"
               name="date"
               placeholder="Tue 15 Sept &mdash; Sat 19 Sept"
+              title="Choose check-in &mdash; check-out dates"
             />
           </div>
           <div class="form__field form__field--guests">
-            <label class="form__label" for="guests"></label>
+            <label class="form__label _pad-left" for="guests"></label>
             <input
               class="form__input form__input--guests"
               type="text"
               id="guests"
               name="guests"
               placeholder="2 Adults — 0 Children — 1 Room"
+              title="Enter number of adults, children, and rooms"
             />
           </div>
           <button class="form__submit-btn" type="submit">Search</button>
+        </form>
+        <!--        Mobile Form/Tablet-->
+        <form class="top-section__form-m form form-m">
+          <label class="form-m__label form-m__label--destination">
+            <input
+              class="form__input form__input--destination"
+              type="text"
+              id="destination-m"
+              name="destination-m"
+              placeholder="Your destination or hotel name"
+          /></label>
+          <label
+            class="form-m__label form-m__label--check-in"
+            content="Check-in"
+          >
+            <input
+              class="form__input form__input--check-in"
+              type="text"
+              id="check-in"
+              name="check-in"
+              placeholder="Tue 15 Sept 2020"
+            />
+          </label>
+          <label
+            class="form-m__label form-m__label--check-out"
+            content="Check-out"
+          >
+            <input
+              class="form__input form__input--check-out"
+              type="text"
+              id="check-out"
+              name="check-out"
+              placeholder="Sat 19 Sept 2020"
+            />
+          </label>
+
+          <div class="grid__row-3">
+            <label class="form-m__label form-m__label--adults" content="Adults">
+              <input
+                class="form__input form__input--adults"
+                type="text"
+                id="adults"
+                name="adults"
+                placeholder="2"
+              />
+            </label>
+            <label
+              class="form-m__label form-m__label--children"
+              content="Children"
+            >
+              <input
+                class="form__input form__input--children"
+                type="text"
+                id="children"
+                name="children"
+                placeholder="0"
+              />
+            </label>
+            <label class="form-m__label form-m__label--rooms" content="Rooms">
+              <input
+                class="form__input form__input--rooms"
+                type="text"
+                id="rooms"
+                name="rooms"
+                placeholder="1"
+              />
+            </label>
+          </div>
+          <button
+            class="form__submit-btn form__submit-btn--mobile"
+            type="submit"
+          >
+            Search
+          </button>
         </form>
 
         <div class="top-section__download-app">
