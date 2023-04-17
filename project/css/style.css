@@ -465,8 +465,31 @@ body {
   margin-bottom: var(--destination-cards-mg-bottom);
 }
 
-.destinations__card-img {
+.destinations__card:hover .destinations__button--book-now {
+  opacity: 1;
+}
+
+.destinations__img-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
   margin-bottom: var(--image-mg-bottom);
+}
+
+.destinations__button--book-now {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  position: absolute;
+  min-width: 128px;
+  height: 48px;
+  color: var(--color-accent-blue);
+  background-color: var(--color-general-white);
+  border: 1px solid var(--color-stroke);
+  opacity: 0;
+  z-index: 10;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .destinations__arrow-btn {
@@ -977,6 +1000,12 @@ body {
 
   .destination__button--places-m {
     display: block;
+  }
+
+  .destinations__button--book-now {
+    font-size: 15px;
+    min-width: 90px;
+    height: 32px;
   }
 
   .destinations__arrow-btn {
