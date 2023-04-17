@@ -262,6 +262,11 @@ body {
   border-style: none;
   background-color: transparent;
   cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.header__nav-btn:hover {
+  transform: scale(1.1);
 }
 
 .header__nav-btn--theme {
