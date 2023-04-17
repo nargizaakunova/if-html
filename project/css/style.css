@@ -469,12 +469,21 @@ body {
   opacity: 1;
 }
 
+.destinations__card-img {
+  transition: all 0.3s ease-in-out 0.1s;
+}
+
+.destinations__card:hover .destinations__card-img {
+  transform: scale(1.05);
+}
+
 .destinations__img-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   margin-bottom: var(--image-mg-bottom);
+  overflow: hidden;
 }
 
 .destinations__button--book-now {
