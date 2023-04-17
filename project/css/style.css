@@ -772,6 +772,10 @@ body {
     transform: translate(-50%, -50%);
   }
 
+  .form__input {
+    border-radius: 4px;
+  }
+
   .form__input--adults {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
