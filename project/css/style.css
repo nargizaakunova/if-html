@@ -79,6 +79,11 @@ body {
   max-width: 296px;
   width: 100%;
   aspect-ratio: 1 /1;
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover .card__img {
+  filter: brightness(50%);
 }
 
 .card__title {
