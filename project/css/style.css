@@ -11,6 +11,9 @@
   --container-pad-left-right: 104px;
   --title-mg-bottom: 104px;
   --image-mg-bottom: 24px;
+  --button-width: 192px;
+  --button-height: 64px;
+  --button-font-size: 24px;
   --text-color: #383838;
   --color-dark-mode-1: #121212;
   --color-dark-mode-2: #1d1e1f;
@@ -100,6 +103,24 @@ body {
 .card__arrow-img {
   max-width: 9px;
   max-height: 21px;
+}
+
+.button {
+  min-width: var(--button-width);
+  height: var(--button-height);
+  border-style: none;
+  border-radius: 8px;
+  font-size: var(--button-font-size);
+  line-height: 28px;
+  font-weight: 500;
+  cursor: pointer;
+  color: var(--text-color);
+  background-color: var(--color-stroke);
+}
+
+.button--active {
+  background-color: var(--color-accent-blue);
+  color: var(--color-general-white);
 }
 
 /* For desktop: */
@@ -326,19 +347,6 @@ body {
   border: 3px solid var(--color-stroke);
 }
 
-.form__submit-btn {
-  flex-basis: 192px;
-  height: 64px;
-  border-style: none;
-  border-radius: 8px;
-  background-color: var(--color-accent-blue);
-  color: var(--color-general-white);
-  font-size: 24px;
-  line-height: 28px;
-  font-weight: 500;
-  cursor: pointer;
-}
-
 .top-section__form-m {
   display: none;
 }
@@ -416,6 +424,16 @@ body {
   font-size: 24px;
   line-height: 28px;
   color: var(--color-secondary-text);
+}
+
+/*The best destinations*/
+.destinations__btns {
+  display: inline-flex;
+  background-color: var(--color-stroke);
+}
+
+.destination__button--places {
+  min-width: 238px;
 }
 
 /*Footer*/
@@ -534,7 +552,7 @@ body {
   /*Top Section*/
 
   .form__field {
-    flex-basis: calc((100% - 192px) / 3);
+    flex-basis: calc((100% - var(--button-width)) / 3);
   }
 
   /*What do we offer*/
@@ -578,6 +596,9 @@ body {
 @media (max-width: 768px) {
   :root {
     --image-mg-bottom: 16px;
+    --button-width: 100px;
+    --button-height: 48px;
+    --button-font-size: 19px;
   }
 
   .card__title {
@@ -760,6 +781,15 @@ body {
   .card__location-info {
     font-size: 20px;
     line-height: 1.2;
+  }
+
+  /*The best destinations*/
+  .button {
+    font-weight: 400;
+  }
+
+  .destination__button--places {
+    min-width: 180px;
   }
 }
 
