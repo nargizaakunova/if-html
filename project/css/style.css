@@ -446,6 +446,10 @@ body {
   min-width: 238px;
 }
 
+.destinations__card-img {
+  margin-bottom: var(--image-mg-bottom);
+}
+
 /*Footer*/
 .footer {
   background-color: var(--color-general-blue);
@@ -584,6 +588,13 @@ body {
 
   .homes__card:nth-child(3),
   .homes__card:nth-child(4) {
+    display: none;
+  }
+
+  /*The best destinations*/
+
+  .destinations__card:nth-child(3),
+  .destinations__card:nth-child(4) {
     display: none;
   }
 
