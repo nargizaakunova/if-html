@@ -296,7 +296,7 @@ body {
   display: none;
 }
 
-.slogan{
+.main-title{
   font-size: 50px;
   font-weight: 500;
   line-height: 59px;
@@ -304,12 +304,12 @@ body {
   color: var(--color-general-white);
 }
 
-.top-section__slogan {
+.top-section__main-title {
   margin-bottom: 145px;
   margin-top: 0;
 }
 
-.slogan__break {
+.main-title__break {
   display: inherit;
 }
 
@@ -787,12 +787,12 @@ body {
     height: 16px;
   }
 
-  .slogan {
+  .main-title {
     font-size: 30px;
     line-height: 35px;
   }
 
-  .top-section__slogan {
+  .top-section__main-title {
     margin-bottom: 30px;
   }
 
