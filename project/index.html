@@ -367,56 +367,58 @@
       <section class="homes">
         <div class="container">
           <h2 class="title homes__main-title">Homes guests loves</h2>
-          <div class="cards homes__cards">
-            <div class="col-lg-3 col-md-6 col-sm-3 card home">
-              <div>
-                <img
-                  class="home__img"
-                  src="./images/content-images/homes-1.png"
-                  alt="Hotel Leopold"
-                />
-                <h3 class="home__title">Hotel Leopold</h3>
-                <p class="home__location">Saint Petersburg, Russia</p>
+          <div class="homes__wrapper">
+            <div class="cards homes__cards">
+              <div class="col-lg-3 col-md-6 col-sm-3 card home">
+                <div>
+                  <img
+                    class="home__img"
+                    src="./images/content-images/homes-1.png"
+                    alt="Hotel Leopold"
+                  />
+                  <h3 class="home__title">Hotel Leopold</h3>
+                  <p class="home__location">Saint Petersburg, Russia</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-3 card home">
+                <div>
+                  <img
+                    class="home__img"
+                    src="./images/content-images/homes-2.png"
+                    alt="Apartment Sunshine"
+                  />
+                  <h3 class="home__title">Apartment Sunshine</h3>
+                  <p class="home__location">Santa Cruz de Tenerife, Spain</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-3 card home">
+                <div>
+                  <img
+                    class="home__img"
+                    src="./images/content-images/homes-3.png"
+                    alt="Villa Kunerad"
+                  />
+                  <h3 class="home__title">Villa Kunerad</h3>
+                  <p class="home__location">Vysokie Tatry, Slowakia</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-3 card home">
+                <div>
+                  <img
+                    class="home__img"
+                    src="./images/content-images/homes-4.png"
+                    alt="Hostel Friendship"
+                  />
+                  <h3 class="home__title">Hostel Friendship</h3>
+                  <p class="home__location">Berlin, Germany</p>
+                </div>
               </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-3 card home">
-              <div>
-                <img
-                  class="home__img"
-                  src="./images/content-images/homes-2.png"
-                  alt="Apartment Sunshine"
-                />
-                <h3 class="home__title">Apartment Sunshine</h3>
-                <p class="home__location">Santa Cruz de Tenerife, Spain</p>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-3 card home">
-              <div>
-                <img
-                  class="home__img"
-                  src="./images/content-images/homes-3.png"
-                  alt="Villa Kunerad"
-                />
-                <h3 class="home__title">Villa Kunerad</h3>
-                <p class="home__location">Vysokie Tatry, Slowakia</p>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-3 card home">
-              <div>
-                <img
-                  class="home__img"
-                  src="./images/content-images/homes-4.png"
-                  alt="Hostel Friendship"
-                />
-                <h3 class="home__title">Hostel Friendship</h3>
-                <p class="home__location">Berlin, Germany</p>
-              </div>
-            </div>
-            <a class="card__arrow-btn homes__arrow-btn" href="#">
-              <svg class="card__arrow-img">
+            <button class="button--reset arrow-btn homes__arrow-btn">
+              <svg class="arrow-btn__img">
                 <use href="./images/content-images/sprite.svg#arrow-right" />
               </svg>
-            </a>
+            </button>
           </div>
         </div>
       </section>
@@ -431,10 +433,7 @@
             >
               Regions
             </button>
-            <button
-              class="button button--m destination__button"
-              type="button"
-            >
+            <button class="button button--m destination__button" type="button">
               Cities
             </button>
             <!--Desktop 3rd btn-->
@@ -452,80 +451,82 @@
               Places
             </button>
           </div>
-          <div class="cards destinations__cards">
-            <div class="col-lg-3 col-md-6 col-sm-3 destination card">
-              <div class="destination__wrapper">
-                <div class="destination__img-wrapper">
-                  <button
-                    class="button button--third-type destination__button--book-now"
-                  >
-                    Book now
-                  </button>
-                  <img
-                    class="destination__img"
-                    src="./images/content-images/destination-1.png"
-                    alt="Maldives"
-                  />
+          <div class="destinations__wrapper">
+            <div class="cards destinations__cards">
+              <div class="col-lg-3 col-md-6 col-sm-3 destination card">
+                <div class="destination__wrapper">
+                  <div class="destination__img-wrapper">
+                    <button
+                      class="button button--third-type destination__button--book-now"
+                    >
+                      Book now
+                    </button>
+                    <img
+                      class="destination__img"
+                      src="./images/content-images/destination-1.png"
+                      alt="Maldives"
+                    />
+                  </div>
+                  <h3 class="destination__title">Maldives</h3>
                 </div>
-                <h3 class="destination__title">Maldives</h3>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-3 destination card">
+                <div class="destination__wrapper">
+                  <div class="destination__img-wrapper">
+                    <button
+                      class="button button--third-type destination__button--book-now"
+                    >
+                      Book now
+                    </button>
+                    <img
+                      class="destination__img"
+                      src="./images/content-images/destination-2.png"
+                      alt="Spain"
+                    />
+                  </div>
+                  <h3 class="destination__title">Spain</h3>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-3 destination card">
+                <div class="destination__wrapper">
+                  <div class="destination__img-wrapper">
+                    <button
+                      class="button button--third-type destination__button--book-now"
+                    >
+                      Book now
+                    </button>
+                    <img
+                      class="destination__img"
+                      src="./images/content-images/destination-3.png"
+                      alt="Norway"
+                    />
+                  </div>
+                  <h3 class="destination__title">Norway</h3>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-3 destination card">
+                <div class="destination__wrapper">
+                  <div class="destination__img-wrapper">
+                    <button
+                      class="button button--third-type destination__button--book-now"
+                    >
+                      Book now
+                    </button>
+                    <img
+                      class="destination__img"
+                      src="./images/content-images/destination-4.png"
+                      alt="Island"
+                    />
+                  </div>
+                  <h3 class="destination__title">Island</h3>
+                </div>
               </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-3 destination card">
-              <div class="destination__wrapper">
-                <div class="destination__img-wrapper">
-                  <button
-                    class="button button--third-type destination__button--book-now"
-                  >
-                    Book now
-                  </button>
-                  <img
-                    class="destination__img"
-                    src="./images/content-images/destination-2.png"
-                    alt="Spain"
-                  />
-                </div>
-                <h3 class="destination__title">Spain</h3>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-3 destination card">
-              <div class="destination__wrapper">
-                <div class="destination__img-wrapper">
-                  <button
-                    class="button button--third-type destination__button--book-now"
-                  >
-                    Book now
-                  </button>
-                  <img
-                    class="destination__img"
-                    src="./images/content-images/destination-3.png"
-                    alt="Norway"
-                  />
-                </div>
-                <h3 class="destination__title">Norway</h3>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-3 destination card">
-              <div class="destination__wrapper">
-                <div class="destination__img-wrapper">
-                  <button
-                    class="button button--third-type destination__button--book-now"
-                  >
-                    Book now
-                  </button>
-                  <img
-                    class="destination__img"
-                    src="./images/content-images/destination-4.png"
-                    alt="Island"
-                  />
-                </div>
-                <h3 class="destination__title">Island</h3>
-              </div>
-            </div>
-            <a class="card__arrow-btn destinations__arrow-btn" href="#">
-              <svg class="card__arrow-img">
+            <button class="button--reset arrow-btn destinations__arrow-btn">
+              <svg class="arrow-btn__img">
                 <use href="./images/content-images/sprite.svg#arrow-right" />
               </svg>
-            </a>
+            </button>
           </div>
         </div>
       </section>

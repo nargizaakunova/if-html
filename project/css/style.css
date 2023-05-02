@@ -51,6 +51,16 @@ body {
   box-sizing: content-box;
 }
 
+.button--reset {
+  border: none;
+  background: none;
+  padding: 0;
+  font-size: inherit;
+  color: inherit;
+  text-decoration: none;
+  outline: none;
+}
+
 ._is-centered {
   text-align: center;
 }
@@ -75,7 +85,7 @@ body {
   cursor: pointer;
 }
 
-.card__arrow-btn {
+.arrow-btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -87,7 +97,7 @@ body {
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.card__arrow-img {
+.arrow-btn__img {
   max-width: 9px;
   max-height: 21px;
 }
@@ -427,6 +437,10 @@ body {
   position: relative;
 }
 
+.homes__wrapper {
+  position: relative;
+}
+
 .home:hover .home__img {
   transform: translateY(-10px);
 }
@@ -435,7 +449,6 @@ body {
   max-width: 296px;
   width: 100%;
   aspect-ratio: 1 /1;
-  transition: all 0.3s ease-in-out;
   margin-bottom: var(--image-mg-bottom);
   transition: transform ease-in-out 0.3s;
 }
@@ -455,8 +468,8 @@ body {
 }
 
 .homes__arrow-btn {
-  top: 31%;
-  right: -12px;
+  top: 30%;
+  right: -18px;
 }
 
 /*The best destinations*/
@@ -478,9 +491,13 @@ body {
   min-width: 238px;
 }
 
+.destinations__wrapper {
+  position: relative;
+  padding-bottom: var(--container-pad-top-btm);
+}
+
 .destinations__cards {
   position: relative;
-  margin-bottom: var(--destination-cards-mg-bottom);
 }
 
 .destination:hover .destination__button--book-now {
@@ -525,10 +542,10 @@ body {
 }
 
 .destinations__arrow-btn {
-  top: calc(100% + var(--destination-cards-mg-bottom));
+  bottom: 0;
   left: 50%;
   transform: translateX(-50%) rotate(90deg);
-  box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 4px 0 4px rgba(0, 0, 0, 0.25);
 }
 
 /*Sign Up section*/
@@ -1026,14 +1043,12 @@ body {
     font-size: var(--section-title-size);
   }
 
-  .card__arrow-btn {
-    top: 30%;
-    right: -4px;
+  .arrow-btn {
     width: 28px;
     height: 28px;
   }
 
-  .card__arrow-img {
+  .arrow-btn__img {
     width: 7px;
     height: 15px;
   }
@@ -1093,6 +1108,9 @@ body {
   }
 
   /*The best destinations*/
+  .destinations__wrapper {
+    padding-bottom: 0;
+  }
 
   .destination__title {
     font-size: 12px;
@@ -1128,7 +1146,7 @@ body {
 
   .destinations__arrow-btn {
     top: 35%;
-    left: calc(100% - 11px);
+    left: calc(100% - 4px);
     transform: translateX(-50%);
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   }
