@@ -70,9 +70,11 @@
             <span>to live, work or just relax</span>
           </h1>
           <!--        Desktop form-->
-          <form class="top-section__form form">
+          <form class="form top-section__form">
             <div class="form__field form__field--city">
-              <label class="form__label _pad-left" for="city"
+              <label
+                class="form__label top__section__label _pad-left"
+                for="city"
                 >Your destination or hotel name</label
               >
               <input
@@ -85,7 +87,9 @@
               />
             </div>
             <div class="form__field form__field--date">
-              <label class="form__label _pad-left" for="date"
+              <label
+                class="form__label top__section__label _pad-left"
+                for="date"
                 >Check-in &mdash; Check-out</label
               >
               <input
@@ -98,7 +102,10 @@
               />
             </div>
             <div class="form__field form__field--guests">
-              <label class="form__label _pad-left" for="guests"></label>
+              <label
+                class="form__label top__section__label _pad-left"
+                for="guests"
+              ></label>
               <input
                 class="form__input form__input--guests"
                 type="text"
@@ -108,15 +115,12 @@
                 title="Enter number of adults, children, and rooms"
               />
             </div>
-            <button
-              class="button button--active form__submit-btn"
-              type="submit"
-            >
+            <button class="button button--active form__button" type="submit">
               Search
             </button>
           </form>
           <!--        Mobile Form/Tablet-->
-          <form class="top-section__form-m form form-m">
+          <form class="form-m top-section__form-m">
             <label class="form-m__label form-m__label--destination">
               <input
                 class="form__input form__input--destination"
@@ -185,10 +189,7 @@
                 />
               </label>
             </div>
-            <button
-              class="button button--active form__submit-btn form__submit-btn--mobile"
-              type="submit"
-            >
+            <button class="button button--active form__button--m" type="submit">
               Search
             </button>
           </form>
