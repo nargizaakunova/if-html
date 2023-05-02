@@ -819,7 +819,7 @@ body {
     display: none;
   }
 
-  .form__input {
+  .form__input--m {
     font-size: 15px;
     font-weight: 500;
     line-height: 18px;
@@ -829,7 +829,7 @@ body {
     border-radius: 4px;
   }
 
-  .form__input:focus {
+  .form__input--m:focus {
     border: none;
     box-shadow: none;
   }
