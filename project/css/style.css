@@ -194,7 +194,7 @@ body {
   padding-left: calc(var(--unit) / 2);
 }
 
-.section__title {
+.title {
   text-align: center;
   font-weight: 500;
   font-size: var(--section-title-size);
@@ -676,7 +676,7 @@ body {
     width: 100%;
   }
 
-  .section__title {
+  .title {
     font-size: var(--section-title-size);
   }
 
@@ -1006,7 +1006,7 @@ body {
     width: calc(var(--col-width) * 6);
   }
 
-  .section__title {
+  .title {
     font-size: var(--section-title-size);
   }
 
