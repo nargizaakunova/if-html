@@ -226,6 +226,7 @@ body {
 .logo__img {
   width: 205px;
   height: 40px;
+  fill: var(--color-accent-blue);
 }
 
 .header__nav {
@@ -1140,6 +1141,7 @@ body {
   .logo__img--mobile {
     width: 98px;
     height: 19px;
+    fill: var(--color-general-white);
   }
 
   .footer__row {
