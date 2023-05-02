@@ -1042,7 +1042,7 @@ body {
     border-radius: 4px;
   }
 
-  .button--mob {
+  .button--m {
     background-color: var(--color-general-white);
     border: 1px solid var(--color-stroke);
   }
