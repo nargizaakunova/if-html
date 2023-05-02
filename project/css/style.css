@@ -75,24 +75,6 @@ body {
   cursor: pointer;
 }
 
-.card__img {
-  max-width: 296px;
-  width: 100%;
-  aspect-ratio: 1 /1;
-  transition: all 0.3s ease-in-out;
-}
-
-.card:hover .card__img {
-  filter: brightness(50%);
-}
-
-.card__title {
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 28px;
-  color: var(--color-accent-blue);
-}
-
 .card__arrow-btn {
   display: flex;
   justify-content: center;
@@ -408,11 +390,11 @@ body {
 
 /*What do we offer*/
 
-.offer__title {
+.offers__main-title {
   position: relative;
 }
 
-.offer__title::after {
+.offers__main-title::after {
   content: "";
   position: absolute;
   width: 100px;
@@ -423,14 +405,15 @@ body {
   transform: translateX(-50%);
 }
 
-.offer__card-img {
-  margin-bottom: 48px;
+.offer__img {
   width: 100%;
   max-width: 100px;
-  aspect-ratio: 1/1;
+  aspect-ratio: 1 /1;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 48px;
 }
 
-.offer__card-title {
+.offer__title {
   font-size: 24px;
   font-weight: 400;
 }
@@ -444,15 +427,28 @@ body {
   position: relative;
 }
 
-.homes__card-img {
-  margin-bottom: var(--image-mg-bottom);
+.home:hover .home__img {
+  transform: translateY(-10px);
 }
 
-.homes__card-title {
+.home__img {
+  max-width: 296px;
+  width: 100%;
+  aspect-ratio: 1 /1;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: var(--image-mg-bottom);
+  transition: transform ease-in-out 0.3s;
+}
+
+.home__title {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px;
+  color: var(--color-accent-blue);
   margin-bottom: 24px;
 }
 
-.card__location-info {
+.home__location {
   font-size: 24px;
   line-height: 28px;
   color: var(--color-secondary-text);
@@ -487,19 +483,26 @@ body {
   margin-bottom: var(--destination-cards-mg-bottom);
 }
 
-.destinations__card:hover .destinations__button--book-now {
+.destination:hover .destination__button--book-now {
   opacity: 1;
 }
 
-.destinations__card-img {
+.destination:hover .destination__img {
+  filter: brightness(50%);
+}
+
+.destination__img {
+  max-width: 296px;
+  width: 100%;
+  aspect-ratio: 1 /1;
   transition: all 0.3s ease-in-out 0.1s;
 }
 
-.destinations__card:hover .destinations__card-img {
+.destination:hover .destination__img {
   transform: scale(1.05);
 }
 
-.destinations__img-wrapper {
+.destination__img-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -508,7 +511,14 @@ body {
   overflow: hidden;
 }
 
-.destinations__button--book-now {
+.destination__title {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px;
+  color: var(--color-accent-blue);
+}
+
+.destination__button--book-now {
   position: absolute;
   opacity: 0;
   z-index: 10;
@@ -688,30 +698,30 @@ body {
 
   /*What do we offer*/
 
-  .offer__card {
+  .offer {
     margin-bottom: calc(var(--unit) * 3);
   }
 
-  .offer__card-img {
+  .offer__img {
     max-width: 85px;
     margin-bottom: 32px;
   }
 
-  .offer__card-title {
+  .offer__title {
     font-size: 18px;
   }
 
   /*Homes guests love*/
 
-  .homes__card:nth-child(3),
-  .homes__card:nth-child(4) {
+  .home:nth-child(3),
+  .home:nth-child(4) {
     display: none;
   }
 
   /*The best destinations*/
 
-  .destinations__card:nth-child(3),
-  .destinations__card:nth-child(4) {
+  .destination:nth-child(3),
+  .destination:nth-child(4) {
     display: none;
   }
 
@@ -739,12 +749,6 @@ body {
     --button-font-size: 19px;
     --buttons-mg-bottom: 40px;
     --destination-cards-mg-bottom: 16px;
-  }
-
-  .card__title {
-    font-size: 20px;
-    line-height: 1.2;
-    margin-bottom: 14px;
   }
 
   .button {
@@ -930,7 +934,13 @@ body {
   }
 
   /*Homes guests love*/
-  .card__location-info {
+  .home__title {
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 14px;
+  }
+
+  .home__location {
     font-size: 20px;
     line-height: 1.2;
   }
@@ -938,6 +948,12 @@ body {
   /*The best destinations*/
   .destination__button--places {
     min-width: 180px;
+  }
+
+  .destination__title {
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 14px;
   }
 
   /*Sign Up Section*/
@@ -1010,12 +1026,6 @@ body {
     font-size: var(--section-title-size);
   }
 
-  .card__title {
-    font-size: 12px;
-    line-height: 14px;
-    margin-bottom: 4px;
-  }
-
   .card__arrow-btn {
     top: 30%;
     right: -4px;
@@ -1045,38 +1055,50 @@ body {
 
   /*What do we offer*/
 
-  .offer {
+  .offers {
     padding-top: 24px;
   }
 
-  .offer__title {
+  .offers__main-title {
     margin-bottom: 32px;
   }
 
-  .offer__title::after {
+  .offers__main-title::after {
     display: none;
   }
 
-  .offer__card {
+  .offer {
     margin-bottom: calc(var(--unit) * 2);
   }
 
-  .offer__card-img {
+  .offer__img {
     max-width: 70px;
     margin-bottom: var(--unit);
   }
 
-  .offer__card-title {
+  .offer__title {
     font-size: 15px;
   }
 
   /*Homes guests love*/
-  .card__location-info {
+  .home__title {
+    font-size: 12px;
+    line-height: 14px;
+    margin-bottom: 4px;
+  }
+
+  .home__location {
     font-size: 12px;
     line-height: 14px;
   }
 
   /*The best destinations*/
+
+  .destination__title {
+    font-size: 12px;
+    line-height: 14px;
+    margin-bottom: 4px;
+  }
 
   .destination__button {
     flex-basis: calc(100% / 3);
@@ -1098,7 +1120,7 @@ body {
     display: block;
   }
 
-  .destinations__button--book-now {
+  .destination__button--book-now {
     font-size: 15px;
     min-width: 90px;
     height: 32px;
