@@ -296,17 +296,20 @@ body {
   display: none;
 }
 
-.top-section__title {
+.slogan{
   font-size: 50px;
   font-weight: 500;
   line-height: 59px;
   letter-spacing: 0.3px;
   color: var(--color-general-white);
+}
+
+.top-section__slogan {
   margin-bottom: 145px;
   margin-top: 0;
 }
 
-.top-section__title-break {
+.slogan__break {
   display: inherit;
 }
 
@@ -784,9 +787,12 @@ body {
     height: 16px;
   }
 
-  .top-section__title {
+  .slogan {
     font-size: 30px;
     line-height: 35px;
+  }
+
+  .top-section__slogan {
     margin-bottom: 30px;
   }
 
