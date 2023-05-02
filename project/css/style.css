@@ -292,7 +292,7 @@ body {
   height: 40px;
 }
 
-.header__hamburger-wrapper {
+.hamburger {
   display: none;
 }
 
@@ -770,16 +770,16 @@ body {
     height: 24px;
   }
 
-  .header__hamburger-wrapper {
+  .hamburger {
     display: block;
   }
 
-  .header__hamburger-btn {
+  .hamburger__btn {
     background-color: transparent;
     border: none;
   }
 
-  .header__hamburger-img {
+  .hamburger__img {
     width: 24px;
     height: 16px;
   }
