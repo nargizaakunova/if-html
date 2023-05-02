@@ -383,25 +383,25 @@ body {
   display: none;
 }
 
-.top-section__download-app {
+.download {
   display: flex;
   justify-content: center;
   gap: var(--unit);
 }
 
-.top-section__btn {
+.download__btn {
   border-style: none;
   cursor: pointer;
   border-radius: 11px;
   background-color: transparent;
 }
 
-.top-section__btn--google-play {
+.download__btn--google-play {
   width: 135px;
   height: 40px;
 }
 
-.top-section__btn--apple-store {
+.download__btn--apple-store {
   width: 120px;
   height: 40px;
 }
