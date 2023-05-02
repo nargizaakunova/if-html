@@ -223,7 +223,7 @@ body {
   margin-bottom: 200px;
 }
 
-.header__logo-img {
+.logo__img {
   width: 205px;
   height: 40px;
 }
@@ -562,7 +562,7 @@ body {
   background-color: var(--color-general-blue);
 }
 
-.footer__logo-img {
+.footer__img {
   display: none;
 }
 
@@ -746,7 +746,7 @@ body {
     margin-bottom: 50px;
   }
 
-  .header__logo-img {
+  .logo__img {
     width: 122px;
     height: 24px;
   }
@@ -1132,9 +1132,12 @@ body {
 
   /*Footer*/
 
-  .footer__logo-img {
+  .footer__img {
     display: block;
     margin: 0 auto 40px;
+  }
+
+  .logo__img--mobile {
     width: 98px;
     height: 19px;
   }
