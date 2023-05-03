@@ -26,7 +26,6 @@
 }
 
 .guest__img {
-  max-width: 400px;
   aspect-ratio: 1/1;
   width: 100%;
 }
