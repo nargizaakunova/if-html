@@ -10,67 +10,7 @@
   position: relative;
 }
 
-.home:hover .home__img {
-  transform: translateY(-10px);
-}
-
-.home__img {
-  max-width: 296px;
-  width: 100%;
-  aspect-ratio: 1 /1;
-  margin-bottom: var(--image-mg-bottom);
-  transition: transform ease-in-out 0.3s;
-}
-
-.home__title {
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 28px;
-  color: var(--color-accent-blue);
-  margin-bottom: 24px;
-}
-
-.home__location {
-  font-size: 24px;
-  line-height: 28px;
-  color: var(--color-secondary-text);
-}
-
 .homes__arrow-btn {
   top: 30%;
   right: -18px;
-}
-
-@media (max-width: 1024px) {
-  .home:nth-child(3),
-  .home:nth-child(4) {
-    display: none;
-  }
-}
-
-@media (max-width: 768px) {
-  .home__title {
-    font-size: 20px;
-    line-height: 1.2;
-    margin-bottom: 14px;
-  }
-
-  .home__location {
-    font-size: 20px;
-    line-height: 1.2;
-  }
-}
-
-@media (max-width: 480px) {
-  /*Homes guests love*/
-  .home__title {
-    font-size: 12px;
-    line-height: 14px;
-    margin-bottom: 4px;
-  }
-
-  .home__location {
-    font-size: 12px;
-    line-height: 14px;
-  }
 }
