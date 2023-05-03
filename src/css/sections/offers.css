@@ -1,3 +1,6 @@
+.offers {
+  order: 2;
+}
 .offers__main-title {
   position: relative;
 }

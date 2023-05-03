@@ -1,12 +1,13 @@
 .homes {
   background-color: var(--color-bg-main);
-}
-
-.homes__cards {
-  position: relative;
+  order: 3;
 }
 
 .homes__wrapper {
+  position: relative;
+}
+
+.homes__cards {
   position: relative;
 }
 
@@ -14,3 +15,5 @@
   top: 30%;
   right: -18px;
 }
+
+

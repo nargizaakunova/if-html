@@ -1,0 +1,164 @@
+.guests {
+  order: 6;
+}
+
+.guests__main-title {
+}
+
+.guests__wrapper {
+  position: relative;
+}
+
+.guests__cards {
+  position: relative;
+}
+
+.guest {
+}
+
+.guest__wrapper {
+  background-color: var(--color-bg-main);
+}
+
+.guest__img-wrapper {
+  position: relative;
+  display: flex;
+}
+
+.guest__img {
+  max-width: 400px;
+  aspect-ratio: 1/1;
+  width: 100%;
+}
+
+.guest__price {
+  position: absolute;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  bottom: 0;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21px;
+  color: var(--color-general-white);
+  padding: 16px 24px 11px;
+}
+
+.guest__price span {
+  font-weight: 400;
+}
+
+.guest__content {
+  padding: 24px calc(24px - calc(var(--unit) / 2)) 24px;
+}
+
+.guest__header {
+  display: flex;
+}
+
+.guest__location {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 500;
+  color: var(--color-accent-blue);
+}
+
+.guest__hotel {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: var(--unit);
+}
+
+.guest__country {
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.guest__reviews {
+  text-align: right;
+}
+.guest__score {
+  margin-bottom: 8px;
+  padding: 4px 11px;
+  background-color: var(--color-general-blue);
+  color: var(--color-general-white);
+  display: inline-block;
+  border-radius: 8px;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 600;
+}
+.guest__review-num {
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--color-secondary-text);
+}
+
+.guest__user {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 23px;
+}
+
+.guest__avatar {
+  margin-right: 13px;
+  margin-left: 12px;
+}
+
+.guest__name {
+  font-size: 18px;
+  line-height: 21px;
+  color: var(--text-color);
+  margin-bottom: 8px;
+}
+
+.guest__origin {
+  font-size: 18px;
+  line-height: 21px;
+  color: var(--color-secondary-text);
+}
+
+.guest__origin-icon {
+  width: 20px;
+}
+
+.guest__feedback {
+  font-size: 18px;
+  line-height: 21px;
+  color: var(--text-color);
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.guests__arrow-btn {
+  top: 24%;
+  right: -18px;
+}
+
+@media (max-width: 1024px) {
+  .guest:nth-child(3) {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .guest {
+    width: 100%;
+  }
+
+  .guest:nth-child(2) {
+    display: none;
+  }
+
+  .guest__img {
+    max-width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 480px) {
+  .guests {
+    order: 5;
+  }
+}

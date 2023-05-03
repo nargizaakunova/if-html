@@ -1,3 +1,6 @@
+.destinations {
+  order: 4;
+}
 .destinations__btns {
   display: inline-flex;
   background-color: var(--color-stroke);

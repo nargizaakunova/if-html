@@ -1,6 +1,5 @@
 .sign-up {
-  padding-top: 0;
-  padding-bottom: 0;
+  order: 5
 }
 
 .sign-up__wrapper {
@@ -70,6 +69,10 @@
 }
 
 @media (max-width: 480px) {
+  .sign-up {
+    order: 6;
+  }
+
   .sign-up__wrapper._desktop {
     display: none;
     background-color: var(--color-general-white);
