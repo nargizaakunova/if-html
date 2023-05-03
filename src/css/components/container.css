@@ -1,0 +1,6 @@
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: var(--container-pad-top-btm) var(--container-pad-left-right);
+  box-sizing: content-box;
+}

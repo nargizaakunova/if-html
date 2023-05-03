@@ -1,0 +1,19 @@
+._is-centered {
+  text-align: center;
+}
+
+._is-hidden {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+
+@media (max-width: 768px) {
+  .grid__row-3 {
+    grid-column: 1 / -1;
+    grid-row: 3;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

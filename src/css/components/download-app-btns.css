@@ -1,0 +1,22 @@
+.download {
+  display: flex;
+  justify-content: center;
+  gap: var(--unit);
+}
+
+.download__btn {
+  border-style: none;
+  cursor: pointer;
+  border-radius: 11px;
+  background-color: transparent;
+}
+
+.download__btn--google-play {
+  width: 135px;
+  height: 40px;
+}
+
+.download__btn--apple-store {
+  width: 120px;
+  height: 40px;
+}

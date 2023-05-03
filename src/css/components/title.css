@@ -1,0 +1,18 @@
+.title {
+  text-align: center;
+  font-weight: 500;
+  font-size: var(--section-title-size);
+  margin-bottom: var(--title-mg-bottom);
+}
+
+@media (max-width: 1024px) {
+  .title {
+    font-size: var(--section-title-size);
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: var(--section-title-size);
+  }
+}

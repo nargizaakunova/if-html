@@ -1,0 +1,19 @@
+.hamburger {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger__btn {
+    background-color: transparent;
+    border: none;
+  }
+
+  .hamburger__img {
+    width: 24px;
+    height: 16px;
+  }
+}
