@@ -5,6 +5,7 @@
 @import "./abstracts/variables.css";
 @import "./abstracts/flexbox-grid.css";
 @import "./abstracts/helper-classes.css";
+@import "./abstracts/animations.css";
 
 @import "./components/button.css";
 @import "./components/hamburger.css";

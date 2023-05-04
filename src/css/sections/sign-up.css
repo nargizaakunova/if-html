@@ -43,6 +43,15 @@
   right: 24px;
 }
 
+.sign-up__close-img {
+  width: 26px;
+  height: 26px;
+}
+
+.sign-up__close-img:hover {
+  animation: rotate-btn 0.3s linear alternate-reverse;
+}
+
 .sign-up__wrapper._mobile {
   display: none;
 }
