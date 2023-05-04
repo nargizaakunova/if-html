@@ -2,18 +2,8 @@
   order: 6;
 }
 
-.guests__main-title {
-}
-
 .guests__wrapper {
   position: relative;
-}
-
-.guests__cards {
-  position: relative;
-}
-
-.guest {
 }
 
 .guest__wrapper {
@@ -23,26 +13,32 @@
 .guest__img-wrapper {
   position: relative;
   display: flex;
+  justify-content: center;
 }
 
 .guest__img {
-  aspect-ratio: 1/1;
   width: 100%;
 }
 
 .guest__price {
   position: absolute;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
   bottom: 0;
+  opacity: 0;
+  padding: 16px 24px 11px;
+  width: 100%;
   font-size: 18px;
   font-weight: 500;
   line-height: 1.16;
   color: var(--color-general-white);
-  padding: 16px 24px 11px;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: opacity 0.3s ease-in-out;
 }
 
-.guest__price span {
+.guest:hover .guest__price {
+  opacity: 1;
+}
+
+.guest:hover .guest__price span {
   font-weight: 400;
 }
 
@@ -52,6 +48,9 @@
 
 .guest__header {
   display: flex;
+  margin-left: -8px;
+  margin-right: -8px;
+  margin-bottom: 30px;
 }
 
 .guest__location {
@@ -69,12 +68,12 @@
 
 .guest__country {
   font-weight: 400;
-  margin-bottom: 30px;
 }
 
 .guest__reviews {
   text-align: right;
 }
+
 .guest__score {
   margin-bottom: 8px;
   padding: 4px 11px;
@@ -86,6 +85,7 @@
   line-height: 1.38;
   font-weight: 600;
 }
+
 .guest__review-num {
   font-size: 14px;
   line-height: 1.14;
@@ -95,25 +95,24 @@
 .guest__user {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 21px;
   margin-bottom: 23px;
+  font-size: 18px;
+  line-height: 1.16;
 }
 
 .guest__avatar {
-  margin-right: 13px;
-  margin-left: 12px;
+  margin-left: 5px;
+  width: 53px;
+  height: 53px;
 }
 
 .guest__name {
-  font-size: 18px;
-  line-height: 1.16;
   color: var(--text-color);
   margin-bottom: 8px;
 }
 
 .guest__origin {
-  font-size: 18px;
-  line-height: 1.16;
   color: var(--color-secondary-text);
 }
 
@@ -125,8 +124,6 @@
   font-size: 18px;
   line-height: 1.16;
   color: var(--text-color);
-  padding-left: 8px;
-  padding-right: 8px;
 }
 
 .guests__arrow-btn {
@@ -150,7 +147,6 @@
   }
 
   .guest__img {
-    max-width: 100%;
     max-height: 400px;
     object-fit: cover;
   }
@@ -159,5 +155,44 @@
 @media (max-width: 480px) {
   .guests {
     order: 5;
+    background-color: var(--color-bg-main);
+  }
+
+  .guest__img {
+    max-height: 325px;
+  }
+
+  .guest:hover .guest__price {
+    font-size: 15px;
+    padding: 10px 16px 10px;
+  }
+
+  .guest__content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .guest__header {
+    margin-bottom: 16px;
+  }
+
+  .guest__location,
+  .guest__score,
+  .guest__info,
+  .guest__feedback {
+    font-size: 15px;
+  }
+
+  .guest__review-num {
+    font-size: 12px;
+  }
+
+  .guest__user {
+    gap: 13px;
+    margin-bottom: 21px;
+  }
+
+  .guest__name {
+    margin-bottom: 4px;
   }
 }
