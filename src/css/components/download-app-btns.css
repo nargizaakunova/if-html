@@ -9,6 +9,11 @@
   cursor: pointer;
   border-radius: 11px;
   background-color: transparent;
+  transition: transform 0.3s ease-in-out;
+}
+
+.download__btn:hover {
+  transform: scale(1.1);
 }
 
 .download__btn--google-play {
