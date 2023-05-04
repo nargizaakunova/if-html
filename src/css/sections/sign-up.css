@@ -1,5 +1,10 @@
 .sign-up {
-  order: 5
+  order: 5;
+}
+
+.sign-up__container {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .sign-up__wrapper {
