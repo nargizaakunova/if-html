@@ -37,7 +37,7 @@
   bottom: 0;
   font-size: 18px;
   font-weight: 500;
-  line-height: 21px;
+  line-height: 1.16;
   color: var(--color-general-white);
   padding: 16px 24px 11px;
 }
@@ -56,7 +56,7 @@
 
 .guest__location {
   font-size: 18px;
-  line-height: 21px;
+  line-height: 1.16;
   font-weight: 500;
   color: var(--color-accent-blue);
 }
@@ -83,12 +83,12 @@
   display: inline-block;
   border-radius: 8px;
   font-size: 18px;
-  line-height: 25px;
+  line-height: 1.38;
   font-weight: 600;
 }
 .guest__review-num {
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   color: var(--color-secondary-text);
 }
 
@@ -106,14 +106,14 @@
 
 .guest__name {
   font-size: 18px;
-  line-height: 21px;
+  line-height: 1.16;
   color: var(--text-color);
   margin-bottom: 8px;
 }
 
 .guest__origin {
   font-size: 18px;
-  line-height: 21px;
+  line-height: 1.16;
   color: var(--color-secondary-text);
 }
 
@@ -123,7 +123,7 @@
 
 .guest__feedback {
   font-size: 18px;
-  line-height: 21px;
+  line-height: 1.16;
   color: var(--text-color);
   padding-left: 8px;
   padding-right: 8px;

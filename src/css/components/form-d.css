@@ -24,7 +24,7 @@
   font-size: 18px;
   font-weight: 400;
   color: var(--color-general-white);
-  line-height: 21px;
+  line-height: 1.16;
   cursor: pointer;
 }
 
@@ -35,7 +35,7 @@
 .form__input {
   font-size: 18px;
   font-weight: 400;
-  line-height: 21px;
+  line-height: 1.16;
   color: var(--text-color);
   width: 100%;
   padding: 22px 24px;

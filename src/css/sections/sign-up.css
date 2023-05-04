@@ -24,7 +24,7 @@
 .sign-up__title {
   font-weight: 500;
   font-size: 24px;
-  line-height: 28px;
+  line-height: 1.16;
   margin-bottom: 21px;
 }
 
@@ -93,7 +93,7 @@
   .sign-up__title--m {
     font-size: 12px;
     font-weight: 400;
-    line-height: 14px;
+    line-height: 1.16;
     margin-bottom: 0;
   }
 
@@ -101,7 +101,7 @@
     color: var(--color-accent-blue);
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     padding-right: 4px;
   }
 }
