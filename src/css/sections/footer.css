@@ -31,6 +31,14 @@
   margin-bottom: 23px;
 }
 
+.footer__link a {
+  transition: color 0.3s ease-in-out;
+}
+
+.footer__link a:hover {
+  color: var(--color-secondary-text);
+}
+
 .footer__link--bold {
   font-weight: 500;
 }
