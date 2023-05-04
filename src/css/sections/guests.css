@@ -131,6 +131,20 @@
   right: -18px;
 }
 
+.guests__nav-btns {
+  display: none;
+  justify-content: center;
+  gap: calc(var(--unit) / 2);
+}
+
+.guests__nav-icon {
+  fill: none;
+}
+
+.guests__nav-icon.active {
+  fill: #333;
+}
+
 @media (max-width: 1024px) {
   .guest:nth-child(3) {
     display: none;
@@ -170,6 +184,7 @@
   .guest__content {
     padding-left: 0;
     padding-right: 0;
+    padding-bottom: 32px;
   }
 
   .guest__header {
@@ -180,6 +195,10 @@
   .guest__score,
   .guest__info,
   .guest__feedback {
+    font-size: 15px;
+  }
+
+  .guest__hotel {
     font-size: 15px;
   }
 
@@ -194,5 +213,12 @@
 
   .guest__name {
     margin-bottom: 4px;
+  }
+  .guests__arrow-btn {
+    display: none;
+  }
+
+  .guests__nav-btns {
+    display: flex;
   }
 }
