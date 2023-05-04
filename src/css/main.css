@@ -1,5 +1,5 @@
-@import "./base/custom-reset.css";
 @import "./base/normalize.css";
+@import "./base/custom-reset.css";
 @import "./base/typography.css";
 
 @import "./abstracts/variables.css";
@@ -22,7 +22,6 @@
 @import "./components/offer-card.css";
 @import "./components/destination-card.css";
 @import "./components/guest-card.css";
-
 
 @import "./sections/header.css";
 @import "./sections/top-section.css";
