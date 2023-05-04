@@ -1,7 +1,7 @@
 :root {
   --col-width: calc(100% / 12);
   --unit: 16px;
-  --container-width: 1232px;
+  --container-width: 1440px;
   --section-title-size: 40px;
   --container-pad-top-btm: 120px;
   --container-pad-left-right: 104px;
