@@ -1,5 +1,5 @@
-.home:hover .home__img {
-  transform: translateY(-10px);
+.home__wrapper {
+  overflow: hidden;
 }
 
 .home__img {
@@ -8,6 +8,10 @@
   aspect-ratio: 1 /1;
   margin-bottom: var(--image-mg-bottom);
   transition: transform ease-in-out 0.3s;
+}
+
+.home:hover .home__img {
+  transform: scale(1.05);
 }
 
 .home__title {

@@ -7,10 +7,16 @@
     position: relative;
     display: flex;
     justify-content: center;
+    overflow: hidden;
 }
 
 .guest__img {
     width: 100%;
+    transition: all 0.3s ease-in-out 0.1s;
+}
+
+.guest:hover .guest__img {
+    transform: scale(1.05);
 }
 
 .guest__price {
