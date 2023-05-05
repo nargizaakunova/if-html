@@ -9,7 +9,8 @@
   --image-mg-bottom: 24px;
   --destination-cards-mg-bottom: 48px;
   --button-width: 192px;
-  --button-height: 64px;
+  /* button-height with 64px: */
+  --button-pad: 17px;
   --button-font-size: 24px;
   --buttons-mg-bottom: 65px;
   --text-color: #383838;
@@ -39,7 +40,8 @@
   :root {
     --image-mg-bottom: 16px;
     --button-width: 100px;
-    --button-height: 48px;
+    /* button-height with 48px: */
+    --button-pad: 12px;
     --button-font-size: 19px;
     --buttons-mg-bottom: 40px;
     --destination-cards-mg-bottom: 16px;
@@ -52,7 +54,8 @@
     --container-pad-top-btm: 40px;
     --container-pad-left-right: 16px;
     --button-width: 98px;
-    --button-height: 32px;
+    /* button-height with 32px: */
+    --button-pad: 4px;
     --buttons-mg-bottom: 24px;
     --col-width: calc(100% / 6);
     --title-mg-bottom: 32px;

@@ -35,13 +35,12 @@
 .form__input {
   font-size: 18px;
   font-weight: 400;
-  line-height: 1.16;
+  line-height: 1.23;
   color: var(--text-color);
   width: 100%;
-  padding: 22px 24px;
+  padding: 18px 24px;
   border-radius: 8px;
   border: 3px solid transparent;
-  max-height: 64px;
   cursor: pointer;
 }
 
