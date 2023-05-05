@@ -14,17 +14,21 @@
   min-width: var(--button-width);
   height: var(--button-height);
   border-radius: 8px;
+  border: 2px transparent solid;
   font-size: var(--button-font-size);
   line-height: 1.16;
   font-weight: 500;
-  color: var(--text-color);
-  background-color: var(--color-stroke);
   transition: all 0.3s ease-in-out;
 }
 
-.button:hover {
-  color: var(--color-general-white);
-  background-color: var(--color-dark-mode-1);
+.button--standard {
+  color: var(--text-color);
+  background-color: var(--color-stroke);
+}
+
+.button--standard:hover {
+  border-radius: 0;
+  background-color: #dbdbdc;
 }
 
 .button--active {
@@ -37,7 +41,7 @@
   background-color: var(--color-general-blue);
 }
 
-.button--third-type {
+.button--card-type {
   font-size: 18px;
   font-weight: 400;
   line-height: 1.16;
@@ -46,6 +50,21 @@
   color: var(--color-accent-blue);
   background-color: var(--color-general-white);
   border: 1px solid var(--color-stroke);
+}
+
+.button--card-type:hover {
+  color: var(--color-general-white);
+  background-color: transparent;
+}
+
+.button--action-type {
+  background-color: transparent;
+  border: 1px solid var(--color-accent-blue);
+}
+
+.button--action-type:hover {
+  background-color: var(--color-accent-blue);
+  color: var(--color-general-white);
 }
 
 @media (max-width: 768px) {

@@ -33,10 +33,6 @@
   margin-bottom: 21px;
 }
 
-.sign-up__button {
-  border: 1px solid var(--color-accent-blue);
-}
-
 .sign-up__close-btn {
   position: absolute;
   top: 24px;
