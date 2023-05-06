@@ -21,7 +21,7 @@
 
 .destinations__wrapper {
   position: relative;
-  padding-bottom: var(--container-pad-top-btm);
+  padding-bottom: 92px;
 }
 
 .destinations__cards {

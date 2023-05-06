@@ -58,7 +58,7 @@
   .destination__title {
     font-size: 12px;
     line-height: 1.16;
-    margin-bottom: 4px;
+    margin-bottom: 0;
   }
 
   .destination__button--book-now {
