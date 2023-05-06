@@ -41,7 +41,7 @@
 }
 
 .guest__content {
-  padding: 24px calc(24px - calc(var(--unit) / 2)) 24px;
+  padding: 24px;
 }
 
 .guest__header {
@@ -119,6 +119,7 @@
 }
 
 .guest__feedback {
+  max-width: 336px;
   font-size: 18px;
   line-height: 1.16;
   color: var(--text-color);
@@ -156,13 +157,11 @@
   }
 
   .guest__content {
-    padding-left: 0;
-    padding-right: 0;
-    padding-bottom: 32px;
+    padding: 12px 0 0;
   }
 
   .guest__header {
-    margin-bottom: 16px;
+    margin-bottom: 14px;
   }
 
   .guest__location,
@@ -174,6 +173,13 @@
 
   .guest__hotel {
     font-size: 15px;
+    margin-bottom: 8px;
+    line-height: 1.172;
+  }
+
+  .guest__score {
+    padding: 3px 10px;
+    margin-bottom: 6px;
   }
 
   .guest__review-num {
@@ -182,10 +188,28 @@
 
   .guest__user {
     gap: 13px;
-    margin-bottom: 21px;
+    margin-bottom: 22px;
+  }
+
+  .guest__avatar {
+    width: 43px;
+    height: 43px;
   }
 
   .guest__name {
     margin-bottom: 4px;
+  }
+
+  .guest__origin-icon {
+    width: 14px;
+  }
+
+  .guest__feedback {
+    margin-bottom: 20px;
+  }
+
+  .guests__nav-btns {
+    margin-top: 3px;
+    margin-bottom: -3px;
   }
 }

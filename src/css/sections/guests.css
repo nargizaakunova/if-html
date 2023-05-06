@@ -2,6 +2,10 @@
   order: 6;
 }
 
+.guests__main-title {
+  line-height: 1.5;
+}
+
 .guests__wrapper {
   position: relative;
 }
@@ -29,6 +33,10 @@
   .guests {
     order: 5;
     background-color: var(--color-bg-main);
+  }
+
+  .guests__main-title {
+    line-height: 1.2;
   }
 
   .guests__arrow-btn {
