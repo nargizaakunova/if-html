@@ -33,6 +33,14 @@
   margin-bottom: 21px;
 }
 
+.sign-up__button {
+  min-width: 128px;
+  padding: 12px;
+  color: var(--color-accent-blue);
+  background-color: var(--color-general-white);
+  font-size: 18px;
+}
+
 .sign-up__close-btn {
   position: absolute;
   top: 24px;
@@ -95,12 +103,17 @@
     background-color: transparent;
   }
 
+  .sign-up__close-btn--m {
+    margin-right: -3px;
+  }
+
   .sign-up__close-img--m {
     width: 16px;
     height: 16px;
   }
 
   .sign-up__title--m {
+    min-width: 164px;
     font-size: 12px;
     font-weight: 400;
     line-height: 1.16;
