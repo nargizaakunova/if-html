@@ -16,4 +16,9 @@
   right: -18px;
 }
 
-
+@media (max-width: 480px) {
+  .homes__arrow-btn {
+    top: 28%;
+    right: -12px;
+  }
+}
