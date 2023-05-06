@@ -1,6 +1,7 @@
 .offers {
   order: 2;
 }
+
 .offers__main-title {
   position: relative;
 }
@@ -12,12 +13,12 @@
   height: 4px;
   background-color: var(--color-accent-yellow);
   left: 50%;
-  bottom: -28px;
+  bottom: -22px;
   transform: translateX(-50%);
 }
 
 @media (max-width: 480px) {
-  .offers {
+  .offers__container {
     padding-top: 24px;
   }
 
